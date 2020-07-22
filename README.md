@@ -5,7 +5,15 @@ Event Emitter for Kotlin
 ## Installation
 
 ```
-implementation 'com.wdxlab.events:events:{version}'
+repositories {
+  maven {
+    url  "https://dl.bintray.com/wdxlab/maven" 
+  }
+}
+
+dependencies {
+  implementation 'com.wdxlab.events:events:{version}'
+}
 ```
 
 ## Usage
