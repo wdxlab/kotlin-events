@@ -18,6 +18,7 @@ class MyLibraryTest {
         val handler: Handler<Stub, EventArg> = spyk({ _, _ -> Unit })
         val handler2: Handler<Stub, EventArg> = spyk({ _, _ -> Unit })
 
+        event.on { sender, arg -> /* do something with sender and arg */ }
         event.on(handler)
         event.on(handler)
         event.on(handler2)
